@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Vesper+Libre&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +17,22 @@
 }
 
 body {
-  
   background: #e7e6e7f3;
+}
+
+.__className_0ec1f4 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+input {
+  border-radius: 5px;
+}
+
+tbody {
+  border-color: transparent;
+  border-radius: 15px;
 }
