@@ -30,23 +30,23 @@ const Users = () => {
     content = <p>Loading...</p>;
   } else if (usersStatus === "succeeded") {
     content = (
-      <table className="container mx-auto text-center py-10 space-x-12">
-        <thead >
+      <table className="container  mx-auto text-center  space-x-12">
+        <thead  >
           <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Action</th>
+            <th >Name</th>
+            <th >Email</th>
+            <th >Phone</th>
+            <th >Action</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="">
           {users.map((user) => (
-            <tr key={user.id}>
-              <td>{user.name}</td>
+            <tr className="  " key={user.id}>
+              <td className="">{user.name}</td>
               <td>{user.email}</td>
               <td>{user.phone}</td>
-              <td>
-                <button onClick={() => handleUserDelete(user.id)}>X</button>
+              <td className="">
+                <button className="bg-transparent hover:bg-zinc-400 text-zinc-600 font-semibold hover:text-white py-2 px-4 border border-zinc-400 hover:border-transparent rounded" onClick={() => handleUserDelete(user.id)}>Delete</button>
               </td>
             </tr>
           ))}
