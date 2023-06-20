@@ -27,7 +27,7 @@ const Users = () => {
   let content;
   console.log(users);
   if (usersStatus === "loading") {
-    content = <p>"Loading..."</p>;
+    content = <p>Loading...</p>;
   } else if (usersStatus === "succeeded") {
     content = (
       <table className="container mx-auto text-center py-10 space-x-12">
